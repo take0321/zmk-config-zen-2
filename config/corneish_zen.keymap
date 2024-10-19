@@ -28,14 +28,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        layer4 {
-            bindings = <&none>;
-            key-positions = <38 37>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -50,10 +43,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC              &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y        &kp U             &kp I           &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB        &kp A  &kp S  &kp D  &kp F  &kp G          &kp H        &kp J             &kp K           &kp L    &kp SEMI  &kp DELETE
-&mt LEFT_SHIFT LGUI  &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N        &kp M             &kp COMMA       &kp DOT  &kp FSLH  &mt LALT MINUS
-                                   &to 4  &mo 1  &lt 3 SPACE    &lt 3 ENTER  &lt 1 LANGUAGE_2  &kp LANGUAGE_1
+&kp ESC              &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y            &kp U             &kp I             &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB        &kp A  &kp S  &kp D  &kp F  &kp G        &kp H            &kp J             &kp K             &kp L    &kp SEMI  &kp DELETE
+&mt LEFT_SHIFT LGUI  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N            &kp M             &kp COMMA         &kp DOT  &kp FSLH  &mt LALT MINUS
+                                   &mo 1  &mo 3  &kp SPACE    &mt SPACE ENTER  &lt 3 LANGUAGE_2  &lt 1 LANGUAGE_1
             >;
         };
 
@@ -98,15 +91,6 @@
 &trans  &kp B   &trans    &kp UP    &kp PG_UP  &kp PAGE_DOWN    &kp B   &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
 &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                           &trans    &trans     &trans           &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp ESCAPE          &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y            &kp U             &kp I             &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB       &kp A  &kp S  &kp D  &kp F  &kp G        &kp H            &kp J             &kp K             &kp L    &kp SEMI  &kp DEL
-&mt LSHFT LEFT_GUI  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N            &kp M             &kp COMMA         &kp DOT  &kp FSLH  &mt LEFT_ALT MINUS
-                                  &to 0  &mo 3  &kp SPACE    &mt SPACE ENTER  &lt 2 LANGUAGE_2  &lt 1 LANGUAGE_1
             >;
         };
     };
