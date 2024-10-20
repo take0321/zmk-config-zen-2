@@ -49,10 +49,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 3 ESCAPE    &kp Q       &kp W  &kp E       &kp R        &kp T        &kp Y            &kp U             &kp I               &kp O         &kp P           &kp BSPC
-&mt LCTRL UP    &kp A       &kp S  &kp D       &kp F        &kp G        &kp H            &kp J             &kp K               &kp L         &kp SEMI        &kp DELETE
-&mt LSHFT DOWN  &mt LALT Z  &kp X  &kp C       &kp V        &kp B        &kp N            &kp M             &mt LEFT_GUI COMMA  &mt LALT DOT  &mt LSHFT FSLH  &mt LCTRL TAB
-                                   &lt 1 LEFT  &lt 2 RIGHT  &kp SPACE    &mt SPACE ENTER  &lt 2 LANGUAGE_2  &lt 1 LANGUAGE_1
+&lt 3 ESCAPE    &kp Q       &kp W    &kp E       &kp R        &kp T        &kp Y            &kp U             &kp I               &kp O         &kp P           &kp BSPC
+&mt LCTRL UP    &kp A       &lt 3 S  &kp D       &kp F        &kp G        &kp H            &kp J             &kp K               &kp L         &kp SEMI        &kp DELETE
+&mt LSHFT DOWN  &mt LALT Z  &kp X    &kp C       &kp V        &kp B        &kp N            &kp M             &mt LEFT_GUI COMMA  &mt LALT DOT  &mt LSHFT FSLH  &mt LCTRL TAB
+                                     &lt 1 LEFT  &lt 2 RIGHT  &kp SPACE    &mt SPACE ENTER  &lt 2 LANGUAGE_2  &lt 1 LANGUAGE_1
             >;
         };
 
