@@ -46,7 +46,7 @@
 &kp ESC              &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y            &kp U             &kp I             &kp O    &kp P     &kp BSPC
 &mt LCTRL TAB        &kp A  &kp S  &kp D  &kp F  &kp G        &kp H            &kp J             &kp K             &kp L    &kp SEMI  &kp DELETE
 &mt LEFT_SHIFT LGUI  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N            &kp M             &kp COMMA         &kp DOT  &kp FSLH  &mt LALT MINUS
-                                   &mo 1  &mo 3  &kp SPACE    &mt SPACE ENTER  &lt 3 LANGUAGE_2  &lt 1 LANGUAGE_1
+                                   &mo 1  &mo 2  &kp SPACE    &mt SPACE ENTER  &lt 2 LANGUAGE_2  &lt 1 LANGUAGE_1
             >;
         };
 
@@ -63,12 +63,22 @@
 &trans    &kp N1           &kp N2       &kp N3          &kp N4        &kp N5           &kp N6     &kp N7          &kp N8           &kp N9            &kp N0             &kp BSPC
 &trans    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR    &kp PERCENT      &kp CARET  &kp AMPERSAND   &kp ASTERISK     &kp LPAR          &kp RPAR           &kp DOUBLE_QUOTES
 &kp PIPE  &kp MINUS        &kp PLUS     &kp UNDERSCORE  &kp EQUAL     &kp BACKSLASH    &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
-                                        &trans          &kp LA(LEFT)  &kp LA(RIGHT)    &kp INS    &kp DEL         &mo 2
+                                        &trans          &kp LA(LEFT)  &kp LA(RIGHT)    &kp INS    &kp DEL         &trans
+            >;
+        };
+
+        layer_w {
+            display-name = "Fn";
+            bindings = <
+&trans  &kp F1  &kp F2    &kp F3        &kp F4     &kp F5              &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
+&trans  &kp B   &trans    &kp UP        &kp PG_UP  &kp LA(I)           &kp B   &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LS(LG(LEFT))    &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                          &kp LA(LEFT)  &trans     &kp LA(RIGHT)       &trans  &trans  &mo 3
             >;
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "bt";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -82,16 +92,8 @@
 &bl BL_ON       &bl BL_OFF       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &kp UNDER    &kp PLUS    &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                                   &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &kp SPACE          &kp RET      &trans      &trans
             >;
-        };
 
-        layer_3 {
-            display-name = "Fn";
-            bindings = <
-&trans  &kp F1  &kp F2    &kp F3    &kp F4     &kp F5           &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &kp B   &trans    &kp UP    &kp PG_UP  &kp PAGE_DOWN    &kp B   &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                          &trans    &trans     &trans           &trans  &trans  &trans
-            >;
+            label = "rgb bt";
         };
     };
 };
