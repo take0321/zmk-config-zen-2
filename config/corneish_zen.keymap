@@ -34,6 +34,21 @@
             bindings = <&kp ENTER>;
             key-positions = <14 15>;
         };
+
+        voldown {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <12 24>;
+        };
+
+        volup {
+            bindings = <&kp C_VOL_UP>;
+            key-positions = <13 25>;
+        };
+
+        play {
+            bindings = <&kp K_PLAY_PAUSE>;
+            key-positions = <14 26>;
+        };
     };
 
     keymap {
@@ -66,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans    &kp N1           &kp N2       &kp N3          &kp N4      &kp N5           &kp N6     &kp N7          &kp N8           &kp N9            &kp N0             &kp BSPC
-&trans    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT      &kp CARET  &kp AMPERSAND   &kp ASTERISK     &kp LPAR          &kp RPAR           &kp DOUBLE_QUOTES
-&kp PIPE  &kp MINUS        &kp PLUS     &kp UNDERSCORE  &kp EQUAL   &kp BACKSLASH    &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
-                                        &trans          &trans      &trans           &trans     &trans          &trans
+&trans           &kp N1           &kp N2       &kp N3          &kp N4      &kp N5           &kp N6     &kp N7          &kp N8           &kp N9            &kp N0             &kp BSPC
+&kp PIPE         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT      &kp CARET  &kp AMPERSAND   &kp ASTERISK     &kp LPAR          &kp RPAR           &kp DOUBLE_QUOTES
+&kp KP_MULTIPLY  &kp MINUS        &kp PLUS     &kp UNDERSCORE  &kp EQUAL   &kp BACKSLASH    &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
+                                               &trans          &trans      &trans           &trans     &trans          &trans
             >;
         };
 
@@ -93,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LC(TAB)  &kp LC(LS(TAB))  &trans         &trans  &trans    &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
-&trans  &trans       &trans           &kp BACKSPACE  &trans  &trans    &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
-&trans  &trans       &trans           &trans         &trans  &trans    &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR
-                                      &trans         &trans  &trans    &trans           &trans           &trans
+&trans  &kp LC(TAB)  &kp LC(LS(TAB))  &trans         &trans  &trans         &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
+&trans  &trans       &kp PRINTSCREEN  &kp BACKSPACE  &trans  &trans         &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
+&trans  &trans       &trans           &trans         &trans  &trans         &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR
+                                      &trans         &trans  &kp K_SLEEP    &kp K_POWER      &trans           &trans
             >;
 
             label = "rgb bt";
